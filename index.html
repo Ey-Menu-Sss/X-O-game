@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>10-dars</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      .container {
+        position: relative;
+        width: 600px;
+        margin: 20px auto;
+        height: 600px;
+        border: 1px solid black;
+      }
+      #left {
+        position: absolute;
+        left: 200px;
+        top: 10px;
+      }
+      #right {
+        position: absolute;
+        right: 140px;
+        top: 10px;
+      }
+      .navX{
+        position: absolute;
+        left: 60px;
+        top: 250px;
+        font-size: 50px;
+      }
+      .navO{
+        position: absolute;
+        font-size: 50px;
+        right: 100px;
+        top: 250px;
+        display: none;
+      }
+      .first-column {
+        display: flex;
+      }
+      .second-column {
+        display: flex;
+      }
+      .thirth-column {
+        display: flex;
+      }
+      .card {
+        width: 200px;
+        height: 200px;
+        border: 2px solid black;
+      }
+      .x {
+        display: flex;
+        justify-content: center;
+      }
+      .f {
+        height: 190px;
+        width: 20px;
+        background-color: black;
+        border-radius: 20px;
+        position: absolute;
+        transform: rotate(45deg);
+      }
+      .s {
+        height: 190px;
+        width: 20px;
+        background-color: black;
+        border-radius: 20px;
+        position: absolute;
+        transform: rotate(-45deg);
+      }
+      .o {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        border: 8px solid black;
+        margin-top: 10px;
+        margin-left: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="father">
+        <div class="navX">-ning navbati</div>
+        <div class="navO">-ning navbati</div>
+      <!-- X -->
+      <div class="x" id="left">
+        <div class="f"></div>
+        <div class="s"></div>
+      </div>
+      <!-- container -->
+      <div class="container">
+        <div class="first-column">
+          <div class="card" id="card1" onclick="jj(id)"></div>
+          <div class="card" id="card2" onclick="jj(id)"></div>
+          <div class="card" id="card3" onclick="jj(id)"></div>
+        </div>
+        <div class="second-column">
+          <div class="card" id="card4" onclick="jj(id)"></div>
+          <div class="card" id="card5" onclick="jj(id)"></div>
+          <div class="card" id="card6" onclick="jj(id)"></div>
+        </div>
+        <div class="thirth-column">
+          <div class="card" id="card7" onclick="jj(id)"></div>
+          <div class="card" id="card8" onclick="jj(id)"></div>
+          <div class="card" id="card9" onclick="jj(id)"></div>
+        </div>
+      </div>
+      <!-- O -->
+      <div class="o" id="right"></div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
